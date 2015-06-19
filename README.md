@@ -9,6 +9,8 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
 
 * Week 1
     - Setup, Shortcuts, Programs, and the Command Line
+        - .editorconfig
+        - Sublime Plugins
     - Git
     - Review HTML Basics
     - Review CSS Basics
@@ -60,8 +62,9 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
     - HTML Bars
     - Ember.Object & Services
         + Computed Properties
-    - Ember Routing
+    - Firebase or Parse
 * Week 9
+    - Ember Routing
     - Ember Data
     - Ember Testing
         + Unit Tests
