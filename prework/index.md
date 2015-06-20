@@ -14,6 +14,6 @@ Continue to follow through this chapter of prework and I will see you in class!
 
 - [Updating Your OS](updating.html)
 - [HTML](html.md)
-- [Console](terminal.md)
+- [Console](console.md)
 - [Javascript](html.md)
 
