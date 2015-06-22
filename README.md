@@ -7,15 +7,17 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
 
 ## The Course From 5000ft up
 
-* Week 1
+* Download Day
     - Setup, Shortcuts, Programs, and the Command Line
         - .editorconfig
         - Sublime Plugins
+* Week 1
     - Git
+    - Console Rundown
     - Review HTML Basics
     - Review CSS Basics
-    - Third Party Code (Materialize CSS)
-    - // Time Management and Estimates
+    - [Don't Overthink it Grids](https://css-tricks.com/dont-overthink-it-grids/)
+    - HTML5 Boilerplate
 * Week 2
     - Bower
     - Responsive CSS
@@ -23,11 +25,11 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
     - SASS
     - Bourbon
     - Neat
+    - // How to be a Professional Science Dog
 * Week 3
     - Javascript Variables and Control Structures
     - Scope & `this`
     - Prototypes
-        + 
     - Basic Javascript DOM
     - Arrays
 * Week 4
@@ -49,6 +51,7 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
     - Multi List ToDo
     - Basic Node.js & Express
         + JSON Server
+    - // Estimates, Pivotal Tracker, and other Tools
 * Week 7
     - Zombie Views
     - Memory Management
