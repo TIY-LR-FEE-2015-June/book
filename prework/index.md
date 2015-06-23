@@ -17,3 +17,6 @@ Continue to follow through this chapter of prework and I will see you in class!
 - [Console](console.md)
 - [Javascript](html.md)
 
+> ** HEADS UP ** Before the install party, you should do one last backup of your computer before coming in to the offices.
+> Though the chances are slim, there is a chance that we may need to reinstall OSX from fresh and I would hate for personal documents or family photos to be lost because of this.
+
