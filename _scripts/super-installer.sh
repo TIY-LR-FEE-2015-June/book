@@ -41,18 +41,18 @@ brew tap caskroom/versions
 apps=(
   alfred
   google-chrome
-  sublime
-  mou
+  sublime-text3
   slack
-  dash
   iterm2
   screenhero
-  github
 
   flux
   quicklook-json
-  sublime-text3
   spectacle
+
+  #dash
+  #mou
+  #github
 )
 
 # Install apps to /Applications
