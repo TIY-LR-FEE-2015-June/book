@@ -26,7 +26,7 @@ $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 clis=(
   git
   trash
-  iojs
+  node
 )
 brew install install ${clis[@]}
 
