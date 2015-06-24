@@ -22,17 +22,11 @@ brew install homebrew/dupes/grep
 
 $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
-# Install Git
-brew install git
-
-# Install Github's Hub: a terminal
-# tool for working with Github
-brew install hub
-
+# Install Git, Trash and io.js
 clis=(
+  git
   trash
   iojs
-  hubflow
 )
 brew install install ${clis[@]}
 

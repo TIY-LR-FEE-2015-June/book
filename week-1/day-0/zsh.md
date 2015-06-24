@@ -62,3 +62,11 @@ So let's make things a bit better.
 - Open iTerm Preferences by using `CMD+,`
     + Under "Profiles" and "Colors" click "Load Preset"
     + Find the preset you wanted from the drop down list
+
+## Other iTerm Settings
+
+While we have the iTerm settings open, let's configure a few things:
+
+- Under "General" uncheck "Use Lion-style full screen windows" (Now you can full screen iTerm using `CMD+ENTER`)
+- Under "Profiles" and "General" Make sure that "Working Directory" is set to "Reuse Previous Session's Directory"
+- Under "Profiles" and "Window" increase the transparency to about 15% (transparency can be toggled with `CMD+U`)
