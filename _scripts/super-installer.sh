@@ -28,7 +28,7 @@ clis=(
   trash
   node
 )
-brew install install ${clis[@]}
+brew install ${clis[@]}
 
 brew cleanup
 
