@@ -12,10 +12,13 @@ To complete this prework, you will need to sign up for [codecademy.com](codecade
 
 Continue to follow through this chapter of prework and I will see you in class!
 
+- [Getting in the Mindset](mental-prep.html)
 - [Updating Your OS](updating.html)
 - [HTML](html.md)
 - [Console](console.md)
-- [Javascript](html.md)
+- [Git](git.md)
+- [Javascript](javascript.md)
+- [Typing](typing.md)
 
 > ** HEADS UP ** Before the install party, you should do one last backup of your computer before coming in to the offices.
 > Though the chances are slim, there is a chance that we may need to reinstall OSX from fresh and I would hate for personal documents or family photos to be lost because of this.
