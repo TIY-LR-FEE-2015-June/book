@@ -5,6 +5,7 @@
     - [Updating Your OS](prework/updating.md)
     - [HTML](prework/html.md)
     - [Console](prework/console.md)
+    - [Git](prework/git.md)
     - [Javascript](prework/html.md)
     - [Typing](prework/typing.md)
 * Class Notes
