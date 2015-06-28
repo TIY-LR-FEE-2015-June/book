@@ -22,23 +22,24 @@ To install `zsh`, we just need to go back to our old friend Homebrew:
 brew install zsh
 ```
 
-## Switching From bash to zsh
+## Installing oh-my-zsh
 
-Even though we've installed zsh, we are still using bash as our shell prompt.
-First we need to find where Homebrew installed zsh for us:
-
-```
-which zsh
-```
-
-Now our session should print out the path to `zsh` and we can highlight and copy this.
-Then we can run this command to switch our default shell (this assumes that `zsh` is located at `/bin/zsh`:
+While zsh can be SUPER powerful, it also can be a pain to get things properly set up.
+Oh-My-ZSH is a tool that will configure ZSH and allows for a ton of themes, plugins, and more.
+To install oh-my-zsh run the following command:
 
 ```
-chsh -s /bin/zsh
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-Now if you open a new terminal session with `CMD+N` or `CMD+T` your prompt should look just a little bit different.
+When this finishes running, you'll already notice that your shell prompt is much more colorful.
+
+Now let's make one last change to ZSH before we move on.
+
+- Run `subl ~/.zshrc` to open the ZSH config file in Sublime Text
+- Where it says `ZSH_THEME` change it from `robbyrussel` to `cypher`
+
+This change will let you see the full path of your current session so you won't have to keep running `pwd`.
 
 ## Fast Wins with ZSH
 

@@ -1,64 +1,66 @@
-# ZSH and iTerm2
+# OSX and Other Configuration
 
-Now that we have a smarter editor, let's make a smarter terminal!
-Right now, our terminal is pretty basic white and black and it doesn't really show us much.
-Let's work on upgrading this a good bit.
+There are still a few other tools that we will need to configure so that everyone is on the same page.
+This will help make sure that our system shortcuts are set up so that we can all help each other out.
 
-## iTerm2
+## Scrolling
 
-When we rand the super installer script we installed a new program called iTerm2.
-This is a drop in replacement for the built in Apple Terminal, but it has a lot more options in terms of flexibility and configuration.
-So let's start by opening iTerm2.
+By default, Apple ships OSX setup to use "Natural Scrolling".
+This can feel good on the trackpad, but is a real weird experience on external mice and when jumping from Mac to PC.
+So we will turn off this feature to make sure no one is left behind or confused when trying to work in groups.
 
-## Installing zsh
+## Flux
 
-So fare our terminal has been using a program called "bash" to run and interpret all of our input as well as the different commands like `cd`, `mkdir`, `open`, `etc`.
-But, there is something better than bash (at least in my opinion) and it will really add to the speed and flexibility of our terminal experience.
+When you are working early in the morning or late at night, eye strain can be a serious issue.
+Flux reduces this by colorizing your display to give off less "blue light" at night.
+This will help with eye strain and falling asleep after working late.
 
-The program we'll be installing is called `zsh` which is a drop in replacement for bash, but it has some extra power baked in and some better defaults when it comes to productivity.
-To install `zsh`, we just need to go back to our old friend Homebrew:
+To set up flux, open the "Flux" app using spotlight.
+Then type in your home zip code so that Flux can know when to start adjusting your screen colors.
 
-```
-brew install zsh
-```
+If you are working on design or color accuracy, you will want to turn off Flux or else you could be in for some really weird results.
+But, if you need to be color accurate, you probably shouldn't be working late at night anyway (RIGHT?).
 
-## Switching From bash to zsh
+## Alfred
 
-Even though we've installed zsh, we are still using bash as our shell prompt.
-First we need to find where Homebrew installed zsh for us:
+The last productivity tool that we will set up is called Alfred.
+Alfred is a better application launcher than the built in Spotlight search and tends to be better at indexing just what you want instead of your entire computer.
 
-```
-which zsh
-```
+We already installed Alfred in our Super Installer, but now we need to open it and set things up:
 
-Now our session should print out the path to `zsh` and we can highlight and copy this.
-Then we can run this command to switch our default shell (this assumes that `zsh` is located at `/bin/zsh`:
+- Open Alfred using Spotlight
+- Open system preferences and go to "Keyboard and Mouse"
+    - Under "Shortcuts" and "Spotlight" change the value of "Show spotlight search" to "ALT+SPACE"
+- Return to Alfred and set the "Alfred Hotkey" to "CMD+SPACE"
+- Next under "Apperance" I reccomend setting the theme to "OSX Yosemite Dark"
 
-```
-chsh -s /bin/zsh
-```
+## Goodbye Capslock
 
-Now if you open a new terminal session with `CMD+N` or `CMD+T` your prompt should look just a little bit different.
+Are your hands getting tired from all of the different keyboard shortcuts?
+Carpal Tunnel and other stress injuries are really common from typing, and turning your hand all sorts of weird ways isn't helping.
 
-## Fast Wins with ZSH
+There are a ton of different keyboard layouts set up to create better ergonomics.
+We aren't going to do anything quite so drastic.
 
-One of the biggest wins with ZSH is that our tab completion works ALOT better.
-Now instead of getting a terrible "bonk" when you try to tab complete, zsh automatically suggests the file you are looking for.
-If there are multiple files that could match your search, then it will suggest all of them and you can tab through each before selecting one with `ENTER`.
-Also, one of the big wins for ZSH is that autocomplete is no longer case sensitive, this better matches the fact that by default, Mac hard drives are case-insensitive (although most servers are not).
+Instead we are going to remap `CAPSLOCK` (You know the key you only use when you are angry on the internet) to `CMD`.
+This not only will decrease the amount of ALL CAPS online, but it will increase producivity and decrease hand strain.
 
-> **NOTE** Most of these improvements are possible with bash, but zsh saves at least one hit of the TAB button per autocomplete.
-> When you are in the terminal all day this adds up to a lot of saved time!
+Steps:
 
-## Theming iTerm
+- Launch "Keyboard" using Alfred
+- Click on "Modifier Keys"
+- For the drop down of "Caps Lock", change this to "Command"
 
-So far, we have our autocomplete working a bit better by using ZSH, but our terminal is still kinda dull looking.
-So let's make things a bit better.
+## More Screen
 
-- Go to https://github.com/mbadolato/iTerm2-Color-Schemes and choose a color scheme that you like for your terminal (I recommend one with really distinct colors rather than something monochrome, this will save time when scanning terminal output for errors and other messages)
-- Run the following command to download the color schemes `git clone git@github.com:mbadolato/iTerm2-Color-Schemes.git ~/.term-colors`
-- Open the new `.term-colors` directory: `open ~/.term-colors`
-- In finder go to `schemes` and open the color scheme you chose
-- Open iTerm Preferences by using `CMD+,`
-    + Under "Profiles" and "Colors" click "Load Preset"
-    + Find the preset you wanted from the drop down list
+In class we will be using our laptops for most of our work, so our screen realestate is pretty limited.
+To increase speed and limit collisions, we will make some modifications to the dock settings.
+Primarily: to save room, we will hide the dock from our screen to give us back those pixels.
+
+> Don't worry between `CMD+TAB` and Alfred you won't miss the Dock.
+
+- Launch "Dock" using alfred
+- Decrease the dock size
+- Set minification to about 1/3
+- Set "Automatically hide and show Dock"
+- Set "position on screen" to "Left"
