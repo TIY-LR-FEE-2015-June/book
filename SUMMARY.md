@@ -18,3 +18,5 @@
             * [Sublime Text Configuration](week-1/day-0/sublime.md)
             * [Zsh](week-1/day-0/zsh.md)
             * [Other](week-1/day-0/other.md)
+        + [Day 1](week-1/day-1/index.md)
+            * [Homework](week-1/day-1/hw.md)
