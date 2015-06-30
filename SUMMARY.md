@@ -19,4 +19,7 @@
             * [Zsh](week-1/day-0/zsh.md)
             * [Other](week-1/day-0/other.md)
         + [Day 1](week-1/day-1/index.md)
+            * [Git](week-1/day-1/git.md)
+            * [HTML](week-1/day-1/html-review.md)
+            * [Github](week-1/day-1/github.md)
             * [Homework](week-1/day-1/hw.md)
