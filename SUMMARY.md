@@ -23,3 +23,5 @@
             * [HTML](week-1/day-1/html-review.md)
             * [Github](week-1/day-1/github.md)
             * [Homework](week-1/day-1/hw.md)
+* Resources
+    - [Homework Preflight Checklist](resources/homework-startup-guide.md)
