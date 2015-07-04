@@ -24,7 +24,9 @@
     * margin
     * padding
     * background
-3. Inspect Element
+3. Web Inspector
+    * Inspect Element
+    * Trying things out with the web inspector
 4. Resources
     * MDN
     * CSS Tricks
