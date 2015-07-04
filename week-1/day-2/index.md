@@ -2,10 +2,12 @@
 
 ## Daily Review
 
-1. [Selectors](selectors.md)
+1. [CSS Syntax](css-syntax.html)
+1. [Basic Selectors](selectors.html)
     * tag name
     * .class
     * #id
+    * Descendants
 2. Basic CSS Rules
     * position
         - top

@@ -23,5 +23,8 @@
             * [HTML](week-1/day-1/html-review.md)
             * [Github](week-1/day-1/github.md)
             * [Homework](week-1/day-1/hw.md)
+        + [Day 2](week-1/day-2/index.md)
+        + [Day 3](week-1/day-3/index.md)
+        + [Day 4](week-1/day-4/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
