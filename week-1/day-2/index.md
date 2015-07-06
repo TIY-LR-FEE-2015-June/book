@@ -8,27 +8,27 @@
     * .class
     * #id
     * Descendants
-2. Basic CSS Rules
+2. [Basic CSS Properties](rules.html)
+    * width
+    * height
+    * display
+    * margin
+    * padding
+    * border
+    * background
+    * box-sizing
     * position
         - top
         - left
         - right
         - bottom
-    * display
     * color
-    * border
-    * box-sizing
-    * width
     * border-radius
     * font-size
     * font-style
-    * zoom?
-    * margin
-    * padding
-    * background
-3. Web Inspector
+3. [Web Inspector](web-inspector)
     * Inspect Element
     * Trying things out with the web inspector
 4. Resources
-    * MDN
-    * CSS Tricks
+    * [MDN](https://developer.mozilla.org/en-US/)
+    * [CSS Tricks](https://css-tricks.com)
