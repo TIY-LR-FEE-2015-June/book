@@ -24,8 +24,13 @@
             * [Github](week-1/day-1/github.md)
             * [Homework](week-1/day-1/hw.md)
         + [Day 2](week-1/day-2/index.md)
+            * [CSS Syntax](week-1/day-2/css-syntax.md)
+            * [CSS Selectors](week-1/day-2/selectors.md)
+            * [CSS Properties](week-1/day-2/properties.md)
         + [Day 3](week-1/day-3/index.md)
         + [Day 4](week-1/day-4/index.md)
+    - Week 2
+        + [Day 1](week-2/day-1/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Common Git Issues](resources/git-remote-config.md)

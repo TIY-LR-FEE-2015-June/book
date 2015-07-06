@@ -21,6 +21,7 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
 * Week 2
     - Bower
     - Responsive CSS
+    - Hosting (Github Pages)
     - Build Tools
     - SASS
     - Bourbon
