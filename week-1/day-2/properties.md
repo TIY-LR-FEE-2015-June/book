@@ -46,3 +46,41 @@ This may not seem like an issue right now, but things get really hard when you t
 
 We can fix this by setting `box-sizing: border-box;`.
 If you want to read more: check out the [original article](http://www.paulirish.com/2012/box-sizing-border-box-ftw/) by Paul Irish.
+Now your element `width` and `height` properties will set the full `width` and `height` including `padding` and `border`.
+
+# Moving Items Around
+
+Now that you have your element sized properly, you will want to move the element around the page.
+
+## Using Margins
+
+To start we can use `margin` to push elements around the page.
+These values can also include negative values.
+While this may look like we are moving the element around the page, all we are doing is adding some room around our element.
+
+## `position: relative;`
+
+By default, elements have a property called `position` set to `static`.
+This means that the position will only be set by the `margin`, `padding`, and `display`.
+
+If we want to slightly tweak the existing positioning, we can set `position: relative;`.
+Then the `top`, `bottom`, `left`, and `right` properties will push our element around based on where it was by default.
+
+## `position: fixed;`
+
+Sometimes, we want to have an element always be in the same place on the page.
+For this we can set `position: fixed;`.
+Then the `top`, `bottom`, `left`, and `right` will position the element based on the position to the window.
+For instance `top: 0` will pin that element to the top of the window.
+This will also place the element on top of the rest of the items on the page.
+
+## `position: absolute;`
+
+The final `position` value that we cover is `absolute`.
+At first glance, this will not look too much different than `position: fixed`.
+However, then you might notice that this element will be effected by scoll while `position: fixed` isn't.
+
+But, elements with `position: absolute` look for the first parent element that isn't set to `position: static` and then will position itself based on the parent edges.
+
+> **NOTE** Elements that use `position: absolute` will no longer be seen when other elements are trying to decide where to render.
+> This includes when a parent element is trying to decide what size to be.
