@@ -28,3 +28,4 @@
         + [Day 4](week-1/day-4/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
+    - [Common Git Issues](resources/git-remote-config.md)
