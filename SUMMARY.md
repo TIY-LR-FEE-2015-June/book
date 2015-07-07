@@ -37,4 +37,5 @@
             <!-- * [Gitignore](week-2/day-1/gitignore.md) -->
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
+    - [Default Project Structure](resources/project-structure.md)
     - [Common Git Issues](resources/git-remote-config.md)
