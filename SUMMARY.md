@@ -31,6 +31,10 @@
         + [Day 4](week-1/day-4/index.md)
     - Week 2
         + [Day 1](week-2/day-1/index.md)
+            * [Media Queries](week-2/day-1/media.md)
+            * [Bower](week-2/day-1/bower.md)
+            <!-- * [Icons & Fonts](week-2/day-1/icons.md) -->
+            <!-- * [Gitignore](week-2/day-1/gitignore.md) -->
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Common Git Issues](resources/git-remote-config.md)

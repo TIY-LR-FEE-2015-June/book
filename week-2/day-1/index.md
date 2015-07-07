@@ -10,7 +10,7 @@ Today we looked at adding a few more layers to our CSS and HTML development skil
     - PNG vs. SVG
     - Font Awesome
     - Google Fonts
-* Third-Party Libraries
+* Third-Party Libraries w/ Bower
 * Gitignore Files
 * Resources
     - [bower.io](http://bower.io)
@@ -22,9 +22,9 @@ Today we looked at adding a few more layers to our CSS and HTML development skil
 Today in lab I showed you a bit of how I would approach building some CSS for a site given some design photos.
 
 The site that I built was [opendesk](http://opendesk.cc/).
-I am currently working on uploading the video capture from this, but my wifi is currently:
 
-![Struggle Bus... Struggle Bus Hard...](https://bensbitterblog.files.wordpress.com/2014/01/struggle-bus.jpg?w=676)
+
+You can watch the video here: https://vimeo.com/132768995
 
 ## Homework
 
