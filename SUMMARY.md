@@ -39,6 +39,7 @@
             * [NPM](week-2/day-3/npm.md)
             * [Broccoli](week-2/day-3/broccoli.md)
             * [SASS](week-2/day-3/sass.md)
+        + [Day 3](week-2/day-4/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
