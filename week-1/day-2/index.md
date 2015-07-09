@@ -26,7 +26,7 @@
     * border-radius
     * font-size
     * font-style
-3. [Web Inspector](web-inspector)
+3. [Web Inspector](web-inspector.html)
     * Inspect Element
     * Trying things out with the web inspector
 4. Resources
