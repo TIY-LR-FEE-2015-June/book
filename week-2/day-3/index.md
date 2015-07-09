@@ -5,16 +5,17 @@ We introduced Live Reload and SASS as ways to help speed up and make our develop
 
 ## Outline
 
-* NPM
-    - Init
+* [NPM](npm.html)
+    - Global Packages
+    - Project Init & `package.json`
     - Installing Dependencies
     - Versions
-* Broccoli
+* [Broccoli](broccoli.html)
     - Installing CLI
     - Basics
     - Live Reload
     - Merge Trees
-* SASS
+* [SASS](sass.html)
     - Syntax
     - Imports
     - Nesting

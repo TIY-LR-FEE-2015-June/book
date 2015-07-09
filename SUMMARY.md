@@ -36,6 +36,9 @@
             <!-- * [Icons & Fonts](week-2/day-1/icons.md) -->
             <!-- * [Gitignore](week-2/day-1/gitignore.md) -->
         + [Day 3](week-2/day-3/index.md)
+            * [NPM](week-2/day-3/npm.md)
+            * [Broccoli](week-2/day-3/broccoli.md)
+            * [SASS](week-2/day-3/sass.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
