@@ -12,14 +12,17 @@ We introduced Live Reload and SASS as ways to help speed up and make our develop
     - Versions
 * [Broccoli](broccoli.html)
     - Installing CLI
+    - Installing Local Broccoli
     - Basics
-    - Live Reload
+    - Builds
     - Merge Trees
+    - Broccoli Server
+    - Live Reload
 * [SASS](sass.html)
     - Syntax
     - Imports
     - Nesting
-    - Variables
+    - Variables & Defaults
     - Color Functions
     - Broccoli-Sass
 
