@@ -19,8 +19,9 @@ We introduced Live Reload and SASS as ways to help speed up and make our develop
     - Broccoli Server
     - Live Reload
 * [SASS](sass.html)
-    - Syntax
     - Imports
+    - Third Party Libraries
+    - Syntax
     - Nesting
     - Variables & Defaults
     - Color Functions

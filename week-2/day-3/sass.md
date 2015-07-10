@@ -79,3 +79,12 @@ Now, before you `@import 'font-awesome';` in your SASS file, you can set a `$fa-
 What's even cooler than being able to change this to a local file, we have the ability to point this to a CDN instead:
 
     $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+## Resources for Learning SASS
+
+Probably the best part about SASS is that you can take your existing CSS file rename it to a `.scss` file extension and everything will continue working!
+Then from there you can start using the awesome features of SASS slowly over time.
+A good place to start is by bringing in variables, then breaking things into partials, replacing multiple repeated properties with mixins, and so on.
+
+This book will eventually have a TLDR; about the different syntax available in SASS.
+Until then the [official SASS getting guide](http://sass-lang.com/guide) is a great way to get started learning SASS.
