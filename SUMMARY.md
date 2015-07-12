@@ -39,7 +39,12 @@
             * [NPM](week-2/day-3/npm.md)
             * [Broccoli](week-2/day-3/broccoli.md)
             * [SASS](week-2/day-3/sass.md)
-        + [Day 3](week-2/day-4/index.md)
+        + [Day 4](week-2/day-4/index.md)
+            * [Broccoli Build to Output Files](week-2/day-3/broccoli.md)
+            * [Bourbon](week-2/day-4/bourbon.md)
+            * [SASS Configuration](week-2/day-3/sass.md)
+            * [Better SASS Variables](week-2/day-3/sass.md)
+            * [GH Pages (put it on the web DAWG)](https://gist.github.com/rtablada/50ab1d84b0e3f9c476d7)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)

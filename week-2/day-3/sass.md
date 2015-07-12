@@ -78,7 +78,7 @@ Now, before you `@import 'font-awesome';` in your SASS file, you can set a `$fa-
 
 What's even cooler than being able to change this to a local file, we have the ability to point this to a CDN instead:
 
-    $fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+    $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 
 ## Resources for Learning SASS
 

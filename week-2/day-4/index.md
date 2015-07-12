@@ -5,12 +5,11 @@ We introduced Live Reload and SASS as ways to help speed up and make our develop
 
 ## Outline
 
-* Broccoli Build to Output Files
-* Bourbon
-* SASS Configuration
-* Better SASS Variables
-* NPM Shrinkwrap
-* GH Pages (put it on the web DAWG)
+* [Broccoli Build to Output Files](../day-3/broccoli.html)
+* [Bourbon](bourbon.html)
+* [SASS Configuration](../day-3/sass.html)
+* [Better SASS Variables](../day-3/sass.html)
+* [GH Pages (put it on the web DAWG)](https://gist.github.com/rtablada/50ab1d84b0e3f9c476d7)
 
 ## Lab
 
