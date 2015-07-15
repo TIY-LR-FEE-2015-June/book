@@ -45,6 +45,9 @@
             * [SASS Configuration](week-2/day-3/sass.md)
             * [Better SASS Variables](week-2/day-3/sass.md)
             * [GH Pages (put it on the web DAWG)](https://gist.github.com/rtablada/50ab1d84b0e3f9c476d7)
+    - Week 3
+        + [Day 1](week-3/day-1/index.md)
+        + [Day 1](week-3/day-3/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
