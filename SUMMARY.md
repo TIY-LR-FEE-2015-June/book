@@ -47,7 +47,8 @@
             * [GH Pages (put it on the web DAWG)](https://gist.github.com/rtablada/50ab1d84b0e3f9c476d7)
     - Week 3
         + [Day 1](week-3/day-1/index.md)
-        + [Day 1](week-3/day-3/index.md)
+        + [Day 2](week-3/day-2/index.md)
+        + [Day 3](week-3/day-3/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
