@@ -10,7 +10,7 @@ Finally, we looked at global scope and our
 
 * Review
 * [Airbnb Code Style Guide](https://github.com/airbnb/javascript)
-* JSCS 
+* [JSCS](jscs.html)
     - Linting
     - Formatting
 * Callbacks

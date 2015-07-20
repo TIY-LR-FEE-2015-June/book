@@ -52,6 +52,7 @@
         + [Day 4](week-3/day-4/index.md)
     - Week 2
         + [Day 1](week-4/day-1/index.md)
+            * [Code Style](week-4/day-1/jscs.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
