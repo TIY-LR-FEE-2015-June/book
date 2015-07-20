@@ -30,12 +30,14 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
 * Week 3
     - Javascript Variables and Control Structures
     - Scope & `this`
-    - Prototypes
     - Basic Javascript DOM
     - Arrays
 * Week 4
-    - jQuery basics
+    - JSCS
+    - array.forEach
+    - Prototypes
     - jQuery.each
+    - jQuery basics
     - Underscore
     - Events
 * Week 5
