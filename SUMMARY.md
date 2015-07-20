@@ -50,6 +50,8 @@
         + [Day 2](week-3/day-2/index.md)
         + [Day 3](week-3/day-3/index.md)
         + [Day 4](week-3/day-4/index.md)
+    - Week 2
+        + [Day 1](week-4/day-1/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
