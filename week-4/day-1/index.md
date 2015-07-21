@@ -18,15 +18,6 @@ Finally, we looked at global scope and our
 * Global Scope
     - Self Invoking Anonymous Functions
 
-## Lab
-
-Today in lab I showed you a bit of how I would approach building some CSS for a site given some design photos.
-
-The site that I built was [opendesk](http://opendesk.cc/).
-
-
-You can watch the video here: https://vimeo.com/132768995
-
 ## Extra Reading
 
 I know that there's still alot of confusion over Javascript in terms of variables, functions, loops and more.
