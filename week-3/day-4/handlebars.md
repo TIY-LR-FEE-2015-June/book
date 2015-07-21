@@ -74,6 +74,16 @@ Now the rest of our JS can remain as before and all together things look a bit l
     var template = Handlebars.compile(templateString);
     var output = template(student);
 
+Now our `output` variable will be the following string:
+
+    <template id="student-info">
+        <h2>Homer <span>Simpson</span></h2>
+        <p>36</p>
+    </template>
+
+> **NOTE** This only sets `output` to a string, it does not add this HTML to the DOM.
+> You will have to set some `innerHTML` to the `output` string to add it to the DOM and make this available to the user.
+
 > **NOTE** In many other Handlebars examples, you may see something like `<script type="text/x-handlebars-template" id="student-info">` rather than using the `template` tag.
 > While both work, `template` is a more up to date and acceptable way to declare templates without rendering things to your browser.
 > By setting the `type` for a `script` tag to something other than `text/javascript`, the contents won't be rendered or interpreted by JS, but IMO this is rather fragile and templates aren't scripts since they don't actually DO something.
