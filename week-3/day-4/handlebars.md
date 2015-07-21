@@ -69,7 +69,83 @@ Now the rest of our JS can remain as before and all together things look a bit l
         lastName: 'Simpson',
         age: 36
     };
-    
+
     var templateString = document.querySelector('#student-info').innerHTML;
     var template = Handlebars.compile(templateString);
     var output = template(student);
+
+> **NOTE** In many other Handlebars examples, you may see something like `<script type="text/x-handlebars-template" id="student-info">` rather than using the `template` tag.
+> While both work, `template` is a more up to date and acceptable way to declare templates without rendering things to your browser.
+> By setting the `type` for a `script` tag to something other than `text/javascript`, the contents won't be rendered or interpreted by JS, but IMO this is rather fragile and templates aren't scripts since they don't actually DO something.
+
+
+## Advanced Handlebars Action
+
+"That's pretty sweet" you might be thinking to yourself.
+But just like Billy Mays always said: "BUT WAIT THERE'S MORE!!!"
+
+Handlebars is more than just pulling in basic properties from an object: there's a ton more that you can do!!!
+
+### `this` in Handlebars
+
+When working with Handlebars, the `this` variable is set to whatever you pass to your template.
+But for ease of use, you can just leave off `this.` in your templates instead of writing something like this:
+
+    <h2>{{this.firstName}} <span>{{this.lastName}}</span></h2>
+    <p>{{this.age}}</p>
+
+### Nested Properties
+
+Let's say that our `student` object has changed and now `firstName` and `lastName` are now part of a `profile` object:
+
+    var student = {
+        profile: {
+            firstName: 'Homer',
+            lastName: 'Simpson'
+        },
+        age: 36
+    };
+
+With handlebars, we can grab properties in "nested" objects just like we would in Javascript by using "dot" notation:
+
+    <h2>{{firstName}} <span>{{lastName}}</span></h2>
+    <p>{{age}}</p>
+
+### Loops and `{{#each}}{{/each}}`
+
+Quite often when working with Handlebars and templates, you may want to go through a large array of different data objects.
+To make this easier, Handlebars allows you to loop part of your template over an array with an block helper.
+To start out a loop you will have `{{#each <varName> as |item|}}`.
+This means that anything between `{{#each}}` and `{{/each}}` would be output for each item in an array.
+And whatever you specify in the `as` area of the `each` will be the item you are currently looping through.
+
+Let's say that our student from before had an array of grades:
+
+    var student = {
+        profile: {
+            firstName: 'Homer',
+            lastName: 'Simpson'
+        },
+        age: 36,
+        grades: [
+            {
+                assignment: 'Week 1',
+                points: 0.5
+            },
+            {
+                assignment: 'Week 2',
+                points: 0.75
+            }
+        ]
+    };
+
+Now we can make a list of our student's grades using the `each` helper:
+
+    <h2>{{firstName}} <span>{{lastName}}</span></h2>
+    <p>{{age}}</p>
+    <ul class="grades">
+        {{#each grades as |grade|}}
+            <li>{{assignment}} - {{points}}</li>
+        {{/each}}
+    </ul>
+
