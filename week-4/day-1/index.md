@@ -1,4 +1,4 @@
-# Monday July 13
+# Monday July 20
 
 Today we reviewed Javascript variables, loops, and functions.
 While reviewing things we covered code style and the Airbnb code style guide.
