@@ -14,7 +14,7 @@ Finally, we looked at global scope and our
     - Linting
     - Formatting
 * [Callbacks](callbacks.html)
-* `array.forEach`
+* [`array.forEach`](foreach.html)
 * Global Scope
     - Self Invoking Anonymous Functions
 

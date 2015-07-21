@@ -164,3 +164,12 @@ Now we can make a list of our student's grades using the `each` helper:
         {{/each}}
     </ul>
 
+Given our student above as the set context, this template will output:
+
+    <h2>Homer <span>Simpson</span></h2>
+    <p>36</p>
+    <ul class="grades">
+            <li>Week 1 - 0.5</li>
+            <li>Week 2 - 0.75</li>
+    </ul>
+

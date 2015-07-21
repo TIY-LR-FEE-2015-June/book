@@ -56,6 +56,7 @@
         + [Day 1](week-4/day-1/index.md)
             * [Code Style](week-4/day-1/jscs.md)
             * [Callbacks](week-4/day-1/callbacks.md)
+            * [array.forEach](week-4/day-1/foreach.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
