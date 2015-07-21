@@ -4,7 +4,7 @@ Today we started working on learning the basics of Javascript with the DOM:
 
 ## Outline
 
-* Javascript
+* Javascript & the DOM
     - `document.getElementById` - returns one `HTMLElement`
     - `document.getElementsByClass` - returns a collection of `HTMLElement`
     - `HTMLElement.innerHTML` - get or set text of an HTML Element
