@@ -52,7 +52,7 @@
         + [Day 4](week-3/day-4/index.md)
             * [More JS HTML Selectors](week-3/day-4/element-selectors.md)
             * [Handlebars](week-3/day-4/handlebars.md)
-    - Week 2
+    - Week 4
         + [Day 1](week-4/day-1/index.md)
             * [Code Style](week-4/day-1/jscs.md)
             * [Callbacks](week-4/day-1/callbacks.md)
