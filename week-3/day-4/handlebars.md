@@ -76,13 +76,18 @@ Now the rest of our JS can remain as before and all together things look a bit l
 
 Now our `output` variable will be the following string:
 
-    <template id="student-info">
-        <h2>Homer <span>Simpson</span></h2>
-        <p>36</p>
-    </template>
+    <h2>Homer <span>Simpson</span></h2>
+    <p>36</p>
 
 > **NOTE** This only sets `output` to a string, it does not add this HTML to the DOM.
 > You will have to set some `innerHTML` to the `output` string to add it to the DOM and make this available to the user.
+> For instance if you had a `contentEl` element representing a `<div class="content></div>` then you could set `contentEl.innerHTML = output`.
+> And now your DOM would show:
+
+    <div class="content">
+        <h2>Homer <span>Simpson</span></h2>
+        <p>36</p>
+    </div>
 
 > **NOTE** In many other Handlebars examples, you may see something like `<script type="text/x-handlebars-template" id="student-info">` rather than using the `template` tag.
 > While both work, `template` is a more up to date and acceptable way to declare templates without rendering things to your browser.
