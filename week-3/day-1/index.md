@@ -7,7 +7,6 @@ Today we started working on learning the basics of Javascript:
 * Variables
 * Functions
 * Maths
-* 
 
 ## Lab
 

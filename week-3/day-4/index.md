@@ -7,7 +7,7 @@ We also talked about `document.querySelector` & `document.querySelectorAll` to g
 
 * `document.querySelector` & `document.querySelectorAll`
 * JSON & Intros to APIs
-* Handlebars
+* [Handlebars](handlebars.html)
     - Templates
     - Variables
     - Conditionals

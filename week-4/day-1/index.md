@@ -27,6 +27,17 @@ The site that I built was [opendesk](http://opendesk.cc/).
 
 You can watch the video here: https://vimeo.com/132768995
 
+## Extra Reading
+
+I know that there's still alot of confusion over Javascript in terms of variables, functions, loops and more.
+So if you feel like that, check out these links:
+
+* [Values](http://eloquentjavascript.net/01_values.html#h_sVZPaxUSy/)
+* [Numbers](http://eloquentjavascript.net/01_values.html#h_flOCH3CuFg)
+* [Arithmetic](http://eloquentjavascript.net/01_values.html#h_RfBT3HMnYs)
+* [Variables](http://eloquentjavascript.net/02_program_structure.html#h_rAGNsfewCX)
+* [Defining A Function](http://eloquentjavascript.net/03_functions.html#h_tqLFw/oazr)
+
 ## Homework
 
 Tonight's assignment is to recreate the same beer layout as homework 2.1 but this time we will be using dynamic data from Javascript and using Handlebars templates.
