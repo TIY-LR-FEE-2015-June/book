@@ -39,3 +39,37 @@ This is where the `Handlebars.compile` function comes in: it accepts our templat
 Now we can create the same output as before by passing `student` to the new `template` function.
 
     var output = template(student);
+
+## Get that HTML out of my Javascript!!!
+
+Does this HTML in your Javascript look ugly?
+No?
+Well... I THINK SO!
+
+Luckily, we can write our Handlebars templates in our HTML file so that HTML (or HTML like things) can stay out of our Javascript!
+
+In HTML5, a new element called `template` was introduced which allows us to write HTML or other bits of templating without them being automatically rendered to the browser.
+So now we can move our `templateString` from our JS to our HTML:
+
+    <template id="student-info">
+        <h2>{{firstName}} <span>{{lastName}}</span></h2>
+        <p>{{age}}</p>
+    </template>
+
+This allows us to add whitespace, and formatting to make our template more readable.
+But now we need a way to get our templateString back into our JS file.
+Luckily, this can easily be done using a mix of `document.querySelector` and `HTMLElement.innerHTML`!
+
+    var templateString = document.querySelector('#student-info').innerHTML;
+
+Now the rest of our JS can remain as before and all together things look a bit like this:
+
+    var student = {
+        firstName: 'Homer',
+        lastName: 'Simpson',
+        age: 36
+    };
+    
+    var templateString = document.querySelector('#student-info').innerHTML;
+    var template = Handlebars.compile(templateString);
+    var output = template(student);
