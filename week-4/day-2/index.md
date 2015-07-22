@@ -9,6 +9,11 @@ In lab we started talking about Javascript prototype, objects, `this`, and inher
 * [Plan of Attack - JS -> DOM](plan-of-attack.html)
 * [Prototype Basics](prototype.html)
 
+## Class Repos
+
+* [Marvel Data - Handlebars](https://github.com/TIY-LR-FEE-2015-June/exercise-4.2)
+* [Prototype Intro](https://github.com/TIY-LR-FEE-2015-June/lesson-4.2)
+
 ## Extra Reading
 
 Since today we covered the introduction to Javascript Prototypes.
