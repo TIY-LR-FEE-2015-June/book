@@ -3,10 +3,10 @@
 
 ## Questions from Last Night's Reading
 
-* When would we use prototype?
+* When would we use prototype? (Shared functionality)
 * if `[]` are `{}` then what's the difference (`instanceof`)
-* prototype vs assignment and regular `{}`
-* Prototypes and Scope
+* prototype vs assignment and regular `{}` (Constructors)
+* Prototypes and Scope (private variables)
 * Getters and Setters
 
 ## Outline
