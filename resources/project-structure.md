@@ -7,13 +7,15 @@ Here are the files that should appear in every project from now on:
     |-public/
     | |-index.html
     |-assets/
-    | |-app.scss
+    | |-scss/
+    | | |-app.scss
+    | |-js/
+    | | |-app.js
     |-Brocfile.js
     |-bower.json
     |-package.json
 
-Along with this, include any required CSS and Javascript files.
-You should name these based on what makes sense.
+Along with this, include any other SCSS, HTML, or Javascript files required by the assignment.
 
 ## Example `.gitignore`
 
@@ -31,9 +33,11 @@ You should name these based on what makes sense.
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <title>Project Title</title>
+      <link rel="stylesheet" href="app.css">
     </head>
     <body>
 
+      <script src="app.js"></script>
     </body>
     </html>
 
@@ -55,12 +59,18 @@ After `bower init` and a few added dependencies your `bower.json` file should lo
         "bower_components",
         "test",
         "tests"
-      ],
-      "dependencies": {
-        "reset-css": "~2.0.20110126",
-        "fontawesome": "~4.3.0"
-      }
+      ]
     }
+
+> Note that this `bower.json` file has no dependencies yet!
+> You will need to run `bower install --save` with some dependencies
+> Here's a few you'll use a lot:
+
+* jquery
+* reset-css
+* bourbon
+* neat
+* fontawesome
 
 ## Example `package.json`
 
@@ -75,13 +85,18 @@ After `npm init` and a few added dependencies your `package.json` file should lo
         "test": "echo \"Error: no test specified\" && exit 1"
       },
       "author": "",
-      "license": "ISC",
-      "dependencies": {
-        "broccoli": "rtablada/broccoli#feature/server-returns",
-        "broccoli-merge-trees": "^0.2.1",
-        "broccoli-sass": "^0.6.6"
-      }
+      "license": "ISC"
     }
+
+> Note that this `package.json` file has no dependencies yet!
+> NPM dependencies will mostly be used for our build tools and Node.js servers.
+> You will need to run `npm install --save` with some dependencies
+> Here's a few you'll use a lot:
+
+* broccoli
+* broccoli-merge-trees
+* broccoli-sass
+* broccoli-funnel
 
 ## Example `Brocfile.js`
 
@@ -90,10 +105,15 @@ After `npm init` and a few added dependencies your `package.json` file should lo
 
     var appCss = compileSass(['styles', 'bower_components'], 'style.scss', 'style.css');
 
-    module.exports = merge(['public', 'bower_components', appCss]);
+    module.exports = merge(['public', appCss]);
+
+> Note this `Brocfile.js` file is fairly barebones.
+> For larger projects you will probably need to do more than just the above (`broccoli-funnel` and the like).
 
 
 ## Example `styles/app.scss`
+
+    @include 'reset';
 
     /* apply a natural box layout model to all elements, but allowing components to change */
     html {

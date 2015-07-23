@@ -38,8 +38,8 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
     - Prototypes
     - jQuery.each
     - jQuery basics
-    - Underscore
     - Events
+    - Underscore
 * Week 5
     - More events
     - What is Application State?
