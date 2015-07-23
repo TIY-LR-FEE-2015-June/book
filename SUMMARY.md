@@ -59,6 +59,7 @@
             * [array.forEach](week-4/day-1/foreach.md)
         + [Day 2](week-4/day-2/index.md)
             * [Plan of Attack](week-4/day-2/plan-of-attack.md)
+        + [Day 3](week-4/day-3/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
