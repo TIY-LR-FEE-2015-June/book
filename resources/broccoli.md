@@ -3,7 +3,11 @@
 Broccoli is an incredibly powerful build tool.
 It works by making small changes to folders and then outputting them either to a build directory or a development server.
 
-This is a few of the most common broccoli plugins and a quick reference of how to use them.
+By default, Broccoli will serve the "tree" that you export from your `Brocfile.js` which is done using `module.exports = `.
+You can read more about this in the full [Broccoli Notes](../week-2/day-3.html).
+
+Before you send a final tree to broccoli, you will likely want to modify your source files into their final forms using plugins.
+This is a list few of the most common broccoli plugins we've used and a quick reference of how to use them.
 
 # `broccoli-merge-trees`
 
