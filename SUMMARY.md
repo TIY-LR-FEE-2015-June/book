@@ -61,6 +61,8 @@
             * [Plan of Attack](week-4/day-2/plan-of-attack.md)
         + [Day 3](week-4/day-3/index.md)
         + [Day 3](week-4/day-4/index.md)
+    - Week 5
+        + [Day 2](week-5/day-2/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
