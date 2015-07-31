@@ -123,3 +123,81 @@ Would output:
     /
     |-index.html
     |-app.css
+
+# `broccoli-sourcemap-concat`
+
+As projects grow, when working with Javascript (and even other files), you will find that you may want to break up your app into smaller files to be more manageable.
+However many files can have download costs to our end users and lead to REALLY weird consequences when files load out of order or if one file fails.
+
+For most cases, you may use `broccoli-sourcemap-concat` to replace `broccoli-funnel`.
+But note that while `broccoli-funnel` outputs many files in different folders, `broccoli-sourcemap-concat` only outputs a single file.
+
+
+    var concat = require('broccoli-sourcemap-concat');
+
+    module.exports = concat('bower_components', {
+        inputFiles: ['jquery/dist/jquery.js', 'underscore/underscore-min.js'], 
+        outputFile: 'vendor.js'});
+
+A project that looks like this:
+
+    /
+    |-bower_components/
+    | |-jquery/
+    | | |-dist/
+    | | | |-jquery.js
+    | | | |-jquery.min.js
+    | | | |-jquery.min.js.map
+    | |-underscore/
+    | | |-underscore.js
+    | | |-underscore-min.js
+    |-assets/
+    | |-app.js
+
+Would output:
+
+    /
+    |-vendor.js
+
+And note that `broccoli-sourcemap-concat` concatinates all of the files listed in `inputFiles` array in the order listed and puts this in the `output.js` file.
+
+# `broccoli-handlebars-precompiler`
+
+When working with Handlebars, we have use `Handlebars.compile` to turn strings in our Javascript and HTML into working functions that will spit out our properly templated data.
+However, `Handlebars.compile` is a bit of a resource hog and when sending a final production app to the browser, we could reduce the size of `handlebars.js` if we don't need `Handlebars.compile`.
+Plus, having all of our templates in our HTML file is a bit weird.
+
+By precompiling our templates in our build step we can get rid of these overheads and as a benefit, we'll also get rid of all of that boilerplate `Handlebars.compile($(selector).html())`.
+The Handlebars precompiler will turn every `.hbs` file in the `srcDir` into a compiled `.js` file with the same name an put template functions on to a Object (or namespace).
+The actual plugin takes to arguments: a tree to modify and then an options object with declared `srcDir` and `namespace` properties.
+
+Here's an example `Brocfile.js`:
+
+    var handlebars = require('broccoli-handlebars-precompiler');
+
+    module.exports = handlebars('assets', {
+      srcDir: 'templates',
+      namespace: 'AppTemplates'
+    });
+
+A project that looks like this:
+
+    /
+    |-assets/
+    | |-js/
+    | | |-app.js
+    | |-templates/
+    | | |-house.hbs
+
+Would output:
+
+    /
+    |-js/
+    | |-app.js
+    |-templates/
+    | |-house.js
+
+> **Note** After using `broccoli-handlebars-precompiler` you will likely want to merge all of the outputted template files using `broccoli-sourcemap-concat`.
+
+> **WARNING** While `broccoli-handlebars-precompiler` will attempt to set properties on an object based on the `namespace` option you send to it.
+> If the specified `namespace` is not set as a variable before your first template, you will see an error: `Cannot set property on undefined`
