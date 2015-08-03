@@ -66,6 +66,7 @@
             * [jQuery Animations](week-3/day-4/jquery-animations.md)
     - Week 5
         + [Day 2](week-5/day-2/index.md)
+        + [Day 3](week-5/day-3/index.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
