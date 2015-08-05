@@ -80,3 +80,5 @@ As a way to move things forward, we can start by writing our tests first.
 Then as we describe the way that our objects should behave, we can write code to make this happen.
 
 # Exercises
+
+* https://github.com/TIY-LR-FEE-2015-June/exercise-5.1
