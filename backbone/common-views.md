@@ -175,5 +175,84 @@ But TRUST me, extending from `Marionette.CollectionView` will reduce ALOT of you
 
 While this isn't quite a View pattern, I wanted to discuss the difference between having an `el` as part of your view prototype or not.
 Setting an `el` property when running `Backbone.View.extend` can be really awesome for quick testing, but it has some issues when working on a larger scale.
-So you have three options: define the `el` in your constructor, define an `el` when you instantiate the view, or don't define an `el` and manually add the view to the DOM using something like `$('#target).append(view.el)`.
+So you have three options: define the `el` in your prototype, define an `el` when you instantiate the view, or don't define an `el` and manually add the view to the DOM using something like `$('#target).append(view.el)`.
 
+### Defining `el` in the View Prototype
+
+When running `Backbone.View.extend` you are creating a view prototype.
+Here you could easily set your `el` property to a DOM selector:
+
+    var MyView = Backbone.View.extend({
+        el: '#some-id',
+    });
+
+This is good because it's easy.
+This is bad because EVERY time you call `new MyView()` you will be creating a view that takes over the control of `#some-id`.
+This also means that you likely will have view events fire even when the view has left the page.
+
+### Defining `el` During Instantiation
+
+What is better than defining the `el` selector in the prototype is defining the `el` selector when instantiating a view:
+
+    var MyView = Backbone.View.extend({});
+
+    var view = new MyView({
+        el: '#some-id',
+    });
+
+What does this gain us?
+Now we can set up our view to attach to something in our current app state instead of relying on whatever we setup in our prototype.
+But this still doesn't get rid of the problem of unexpected events or overwriting your old views if the `el` is the same.
+
+### Manually Adding to the DOM
+
+The final option is to let the view be itself and then add the view into the DOM.
+
+    var MyView = Backbone.View.extend({});
+
+    var view = new MyView({});
+
+    $('#some-id').html(view.el);
+
+What difference does this make?
+Now we can remove this view by calling `view.remove()` without messing with the `#some-id` element.
+This allows you to manage your memory footprint.
+Any new items rendered into `#some-id` will replace what the user sees but events won't randomly fire.
+Also, you can now set the `classNames`, and `tagName` attributes on your view without worrying if they conflict with the existing DOM element that you are binding your view into.
+
+### Bonus: Using `Marionette.RegionManager`
+
+While we can call `$('#some-id').html(view.el);` we have no good way of tracking what view is currently rendered nor do we have a good way of getting rid of old views.
+While we likely won't have zombie events fire, we still have some memory footprint that is being used up by the view that is still sitting around.
+
+Marionette can help manage this with the `Marionette.RegionManager`.
+What the `Marionette.RegionManager` does is help us track and replace parts of our existing DOM with Backbone views.
+
+To setup our region manager we can instantiate a new `Marionette.RegionManager`:
+
+    var manager = new Marionette.RegionManager({
+        regions: {
+            main: '#main',
+            sidebar: '#sidebar',
+        },
+    });
+
+Then we can set the main area of our app to show our instance of `MyView`:
+
+    var MyView = Backbone.View.extend({});
+
+    var view = new MyView({});
+
+    /**
+     * Grabs the 'main' region and renders our view into it
+     */
+    manager.get('main').show(view);
+
+Not only will our Region Manager render our view into the specified selector, it will also detach any view that used to be in this region and free up that memory and get rid of any event listeners that could have sat around like the living dead.
+
+Along with showing views, the region manager regions also allow us to remove views from a region using the `empty` function:
+
+    /**
+     * Removes any views from the main region and destroys them
+     */
+    manager.get('main').empty()
