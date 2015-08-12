@@ -79,4 +79,5 @@
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
     - [Broccoli Plugins TLDR;](resources/broccoli.md)
+    - [Sails JS Getting Started](resources/sails-intro.md)
     - [Common Git Issues](resources/git-remote-config.md)
