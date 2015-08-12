@@ -75,6 +75,8 @@
         + [Day 4](week-6/day-4/index.md)
     - Week 7
         + [Day 1](week-7/day-1/index.md)
+* Backbone Guide
+    - [Common View Patterns](backbone/common-views.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
