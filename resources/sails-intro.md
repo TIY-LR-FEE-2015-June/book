@@ -43,7 +43,7 @@ This will create two files:
 You'll notice that both of these files are fairly empty besides a set of comments and a simple `module.exports` statement which exports an empty object (or an object with a `attributes` property of an empty object as in the case of the model).
 It may not look like it, but because of the HEAVY conventions of Sails.js, this is all you need to have a full JSON data API (not to be confused with the [JSON API specification](http://jsonapi.org/))!
 
-Before we can look at the array, you might notice that your terminal is barfing up a HUGE amount of warnings talking about needing to migrate.
+Before your can look at the API, you might notice that your terminal is barfing up a HUGE amount of warnings talking about needing to migrate.
 Since we've created a new model, Sails needs to setup a place to store our data.
 To do this, it needs to run an automatically created migration.
 But for data safety, Sails will not run migrations without you telling it that it is ok.
@@ -122,8 +122,8 @@ So you might be asking yourself: "why do we have a full API from little to no co
 Behind all of Sails.js there are things called Blueprints.
 Blueprints describe how the application should act if there is nothing overriding the default (or turning them off via configuration).
 
-The first API that we directly are interacting with are the API action Blueprints.
-If we do not create explicit routes to override them, the API action blueprints will be available if there is a model and matching controller.
+The first Blueprint that you are interacting with are the API action Blueprints which build out how default APIs behave with Sails.js.
+If you do not create explicit routes to override them, the API action blueprints will be available if there is a model and matching controller.
 Then from there, Sails automatically creates different controller methods for the following actions:
 
 * `find` - Available via a `GET` request to the root of your resource `/users/` - This will show all of the records for a model, also can optionally paginate and do rough searches using query parameters.
@@ -131,3 +131,13 @@ Then from there, Sails automatically creates different controller methods for th
 * `create` - Available via a `POST` request to the root of your resource `/users/` - This will create a record using either form data or JSON input and return the created record with `id` and timestamps
 * `update` - Available via a `PUT` request with an id after the resource root `/users/:id` - Updates the attributes for an existing record with a matching `id` from the URL.
 * `destroy` - Available via a `DELETE` request with an id after the resource root `/users/:id` - Destroys a record with a matching `id` from the database.
+
+If you want to override the default behavior of any of these actions, just create a function named with the action you want to override. For instance if you don't want to allow the API to delete users you could make your `UserController.js` look like:
+
+    export.default = {
+        destroy: function(req, res) {
+            res.jsonx('uh uh uh you didn't say the magic word');
+        }
+    }
+
+Now whenever you try to delete a user via the API, the user won't be deleted and you should see the response `uh uh uh you didn't say the magic word`.
