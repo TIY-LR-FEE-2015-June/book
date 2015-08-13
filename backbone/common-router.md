@@ -252,7 +252,7 @@ For instance, we can setup this search function to set things up for titles that
                  * Filters contacts from the collection of contacts
                  */
                 var filteredContacts = _this.contacts.filter(function(model) {
-                    return model.indexOf(term) > -1;
+                    return model.get('title').indexOf(term) > -1;
                 });
 
                 this.mainView = new IndexView({collection: filteredContacts});
@@ -316,7 +316,7 @@ Since the search and index are so similar, this can actually be modified to shar
                         return true;
                     }
                     
-                    return model.indexOf(term) > -1;
+                    return model.get('title').indexOf(term) > -1;
                 });
 
                 this.mainView = new IndexView({collection: filteredContacts});
