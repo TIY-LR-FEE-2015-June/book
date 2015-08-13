@@ -316,6 +316,14 @@ Since the search and index are so similar, this can actually be modified to shar
                         return true;
                     }
                     
+                    /**
+                     * This is how the collection is filtered,
+                     * this is the bit of code you will change
+                     * in your project
+                     *
+                     * Here the model's `title` property is tested
+                     * to see if the search term exists in the string
+                     */
                     return model.get('title').indexOf(term) > -1;
                 });
 
