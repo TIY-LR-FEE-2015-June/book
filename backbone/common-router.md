@@ -190,3 +190,141 @@ To do this you will need to put the above code in a function that can be run BOT
         }
     });
 
+## Optional Route Segments
+
+Similar to the way that you can use the router to match a dynamic id, you can make parts of the URL optional.
+To do this, wrap the optional parts of the URL in parenthesis:
+
+    routes: {
+        'search/(:term)': 'search',
+    }
+
+This will mean that the `search` function will be run for the URLs `search`, `search/s`, `search/hey`.
+
+This can be used to filter collections to search and look for things.
+For instance, we can setup this search function to set things up for titles that match the search term in the url
+
+    var AppRouter = Backbone.Router.extend({
+        initialize: function() {
+            this.contacts = new ContactList();
+            this.sidebar = new Sidebar({collection: this.contacts});
+            $('#sidebar').html(this.sidebar.render().el);
+
+            /**
+             * Starts the master list of contacts
+             * syncing with the server: shared across all
+             * views
+             */
+            this.contacts.fetch();
+        },
+
+        routes: {
+            '': 'index',
+            'post/:id': 'showPost',
+            'search/(:term)',
+        },
+
+        index: function() {
+            this.mainView = new IndexView({collection: this.contacts});
+
+            $('#content').html(this.mainView.render().el);
+        },
+
+        showPost: function(id) {
+            var _this = this;
+
+            var attachDetail = function() {
+                var contact = _this.contacts.get(id);
+                _this.mainView = new DetailView({model: contact});
+
+                $('#content').html(this.mainView.render().el);
+            };
+
+            attachDetail();
+            this.listenTo(this.contacts, 'sync', attachDetail);
+        },
+
+        search: function(term) {
+            var _this = this;
+
+            var attachSearch = function() {
+                /**
+                 * Filters contacts from the collection of contacts
+                 */
+                var filteredContacts = _this.contacts.filter(function(model) {
+                    return model.indexOf(term) > -1;
+                });
+
+                this.mainView = new IndexView({collection: filteredContacts});
+
+                $('#content').html(this.mainView.render().el);
+            }
+
+            attachSearch();
+            this.listenTo(this.contacts, 'sync', attachSearch);
+        }
+    });
+
+Since the search and index are so similar, this can actually be modified to share the search function by just updating the filter to return true if there is no term.
+
+    var AppRouter = Backbone.Router.extend({
+        initialize: function() {
+            this.contacts = new ContactList();
+            this.sidebar = new Sidebar({collection: this.contacts});
+            $('#sidebar').html(this.sidebar.render().el);
+
+            /**
+             * Starts the master list of contacts
+             * syncing with the server: shared across all
+             * views
+             */
+            this.contacts.fetch();
+        },
+
+        routes: {
+            'post/:id': 'showPost',
+            /**
+             * Make all of the search and term optional
+             * Matches an empty route or `search/:term`
+             */
+            '(search/:term)': 'search',
+        },
+
+        showPost: function(id) {
+            var _this = this;
+
+            var attachDetail = function() {
+                var contact = _this.contacts.get(id);
+                _this.mainView = new DetailView({model: contact});
+
+                $('#content').html(this.mainView.render().el);
+            };
+
+            attachDetail();
+            this.listenTo(this.contacts, 'sync', attachDetail);
+        },
+
+        search: function(term) {
+            var _this = this;
+
+            var attachSearch = function() {
+                /**
+                 * Filters contacts from the collection of contacts
+                 */
+                var filteredContacts = _this.contacts.filter(function(model) {
+                    if (!term) {
+                        return true;
+                    }
+                    
+                    return model.indexOf(term) > -1;
+                });
+
+                this.mainView = new IndexView({collection: filteredContacts});
+
+                $('#content').html(this.mainView.render().el);
+            }
+
+            attachSearch();
+            this.listenTo(this.contacts, 'sync', attachSearch);
+        }
+    });
