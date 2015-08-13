@@ -102,6 +102,8 @@ Once you have the route, you need to actually do something about it.
 From here you'll will need to look up an model by it's `id` from the existing collection and then render your view.
 You might think you could do something like this:
 
+<strong style="color:red">Caution: </strong> This will not work
+
     showPost: function(id) {
         /**
          * Grab a single contact from the
