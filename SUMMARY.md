@@ -77,6 +77,7 @@
         + [Day 1](week-7/day-1/index.md)
 * Backbone Guide
     - [Common View Patterns](backbone/common-views.md)
+    - [Common Router Patterns](backbone/common-router.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
