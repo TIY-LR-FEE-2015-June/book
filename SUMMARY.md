@@ -76,6 +76,7 @@
     - Week 7
         + [Day 1](week-7/day-1/index.md)
 * Backbone Guide
+    - [Other Resources](backbone/starting-reading.md)
     - [Common View Patterns](backbone/common-views.md)
     - [Common Router Patterns](backbone/common-router.md)
 * Resources
