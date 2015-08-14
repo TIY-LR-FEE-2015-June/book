@@ -65,7 +65,7 @@ When you initialize an item view you will need to in a model property:
          * @return {object} data to send to the template function
          */
         getData: function() {
-            var data = {};
+            var data = this.model || {};
 
             if (this.model) {
                 data = this.model;
