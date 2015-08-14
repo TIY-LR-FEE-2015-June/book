@@ -108,7 +108,7 @@ You might think you could do something like this:
         /**
          * Grab a single contact from the
          * contacts collection by its id
-         * @type {[type]}
+         * @type {Backbone.Model}
          */
         var contact = this.contacts.get(id);
 
@@ -169,6 +169,10 @@ To do this you will need to put the above code in a function that can be run BOT
              */
             var _this = this;
 
+            /**
+             * Move the above code to a function that can
+             * be run and set as a callback
+             */
             var attachDetail = function() {
                 var contact = _this.contacts.get(id);
                 _this.mainView = new DetailView({model: contact});
