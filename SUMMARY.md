@@ -79,6 +79,8 @@
     - [Other Resources](backbone/starting-reading.md)
     - [Common View Patterns](backbone/common-views.md)
     - [Common Router Patterns](backbone/common-router.md)
+* Ember Guide
+    - [Getting Started Resources](ember/getting-started.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
