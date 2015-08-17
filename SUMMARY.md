@@ -85,6 +85,7 @@
 * Ember Guide
     - [Getting Started Resources](ember/getting-started.md)
     - [Common Addons](ember/addons.md)
+    - [Ember Data Lifecycle](ember/ember-data-lifecycle.md)
 * Resources
     - [Homework Preflight Checklist](resources/homework-startup-guide.md)
     - [Default Project Structure](resources/project-structure.md)
