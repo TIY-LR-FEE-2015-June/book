@@ -11,6 +11,9 @@
 
 ### Ember Questions
 
+* Firebase? - 
+    - TLDR; Firebase is an API Server as a Service (PaaS)
+* Mixins - We will cover this Wednesday
 * Ember vs Backbone (scope and jobs)
     - Scope, stability, conventions
 * Builds - We will cover this Thursday
@@ -21,14 +24,19 @@
     - TLDR; Controllers allow you to manage data and state for a single route AFTER it has been loaded
 * Helpers - We will cover this Wednesday
     - TLDR; Ember uses handlebars helpers to modify how you display data from your template to your user
-* Actions - We will cover this Wednesday
+* Actions & Bubbling - We will cover this Wednesday
     - TLDR; Components kind of disable bubbling and put it back in your control, but there is an older convention that we will talk about
 * `modelFor` vs other methods - We will cover this Today
     - TLDR; Passing around data is hard, there are better conventions for this
 * Block vs Inline components - `link-to`
     - TLDR; Components allow you to modify the contents of themselves, but `link-to` is flexible and allows you to either create it as an inline component or a component block
+    - `{{link-to 'Salary' 'finance' model}}` === `{{#link-to 'finance' model}}Salary{{/link-to}}`
 * `homeRoute` - We will cover this on Friday
     - This is an option for Ember CLI Materialize to modify the link in the main navigation.
+* `initProperties`
+* Models and Collections - We will cover this... TODAY!!!
+* Controllers? - We will cover this next week
+* Testing? - We will cover this next week
 
 ### Component & Routes
 
@@ -37,6 +45,7 @@
     - Actions that are specific to JUST THAT ROUTE (actions that aren't reusable)
 * Components
     - Morph data for a specific usecase (map and reduce, filter, etc)
+    - Only can work with data sent to them
     - Actions that are reusable or need to tweak user input before passing on responsibility
 
 ### ES6 Syntax
@@ -53,5 +62,13 @@
 * Template Strings
     - Back Tick vs quotes
     - Pull in JS with ${___}
+    - example `var x = ``${firstName} ${lastName}``;`
 
 ### Ember Data
+
+
+### Resources
+
+* Content Security Policy
+* What are All These Files!!!? Navigating an Ember-CLI Project
+* Life Cycle of an Ember Data Model
