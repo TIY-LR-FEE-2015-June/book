@@ -58,17 +58,15 @@ Over twelve weeks we will cover HTML, CSS, Javascript, and more to get you ready
 * Week 7
     - Zombie Views
     - Memory Management
-    - Express Servers
-        + Req/Res Middleware
-        + Proxies
-        + JSON Server Scaffold
     - Backbone Project
+    - Intro to Ember
 * Week 8
-    - Ember Component Refactoring
-    - HTML Bars
+    - ES6 & Ember Data
+    - Firebase and More Ember Data Adapters
     - Ember.Object & Services
         + Computed Properties
-    - Firebase or Parse
+    - Nested Routes
+    - Prototyping with Materialize
 * Week 9
     - Ember Routing
     - Ember Data
