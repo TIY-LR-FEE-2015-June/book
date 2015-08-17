@@ -11,7 +11,7 @@
 
 ### Ember Questions
 
-* Firebase? - 
+* Firebase? -
     - TLDR; Firebase is an API Server as a Service (PaaS)
 * Mixins - We will cover this Wednesday
 * Ember vs Backbone (scope and jobs)
@@ -30,7 +30,13 @@
     - TLDR; Passing around data is hard, there are better conventions for this
 * Block vs Inline components - `link-to`
     - TLDR; Components allow you to modify the contents of themselves, but `link-to` is flexible and allows you to either create it as an inline component or a component block
-    - `{{link-to 'Salary' 'finance' model}}` === `{{#link-to 'finance' model}}Salary{{/link-to}}`
+
+
+        {{link-to 'Salary' 'finance' model}}
+
+        {{!-- Is the same as --}}
+        {{#link-to 'finance' model}}Salary{{/link-to}}
+
 * `homeRoute` - We will cover this on Friday
     - This is an option for Ember CLI Materialize to modify the link in the main navigation.
 * `initProperties`
