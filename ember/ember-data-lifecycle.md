@@ -5,6 +5,8 @@ Following these steps can be a bit of a hassle, so let's follow a few different 
 
 For this documentation, assume you'll be working with CRUD for Blog Post data represented by a `post` model.
 
+> **NOTE** This documentation is meant to be used as an introduction to Ember Data and commonly overwritten properties in Serializers and Adapters. This guide is not meant to be a full trace of every private method used in Ember Data to accomplish async operations or data transformations. For that I would recommend reading the [Ember Data API](http://emberjs.com/api/data/classes/DS.RESTAdapter.html) and clicking on the links to related source code for each method, although this level of understanding is not necessary.
+
 ## Fetching a Collection of Data
 
 From a route, you can fetch all of the records for a particular model from the server using `this.store.findAll`.
