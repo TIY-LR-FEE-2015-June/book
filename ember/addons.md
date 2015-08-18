@@ -37,7 +37,7 @@ Beware if you already have an `app.scss` file as tihs will completely replace an
 
 ## Lodash (Basically the Same as Underscore.js)
 
-Installation: `ember install ember-cli-lodash`
+Installation: `ember install ember-lodash`
 
 Notes: This addon allows you to import lodash modules, it does not expose lodash as a global `_` variable.
 To use lodash add an `import _ from 'lodash/lodash';` to the top of files where needed.
