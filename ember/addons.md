@@ -30,10 +30,10 @@ Beware if you already have an `app.scss` file as tihs will completely replace an
 
 Installation: `ember install ember-cli-neat`
 
-Notes: This addon requires you to already have installed `broccoli-sass`.
+Notes: This addon requires you to already have installed `broccoli-sass` using `npm install --save-dev broccoli-sass`.
 Unlike reset, this package will try to create a new `app.scss` file for you with the line `@import 'neat';`.
 Beware if you already have an `app.scss` file as tihs will completely replace any existing ones, it will not try to merge things.
-**Currently, `ember-cli-neat` does not bring in Bourbon... This means that you will need to install `ember-cli-bourbon` first and make sure that you add `@import 'bourbon';` to your `app.scss` file before importing Neat**
+This package will also pull in bourbon, so you do not need to install `ember-cli-bourbon` if you want to use neat.
 
 ## Lodash (Basically the Same as Underscore.js)
 

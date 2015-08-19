@@ -78,6 +78,7 @@
         + [Day 1](week-7/day-4/index.md)
     - Week 8
         + [Day 1](week-8/day-1/index.md)
+        + [Day 2](week-8/day-2/index.md)
 * Backbone Guide
     - [Other Resources](backbone/starting-reading.md)
     - [Common View Patterns](backbone/common-views.md)
